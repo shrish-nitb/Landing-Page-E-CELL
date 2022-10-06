@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Raleway:wght@400;600;700;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+main{
+    font-family: 'Raleway', sans-serif;
+}
+.landing{
+    min-height: 100vh;
+    background:transparent;
+    background-size: cover;
+    padding: 0rem 0rem;
+}
+#parallax{
+
+   background-image: url(../Images-summit/E\ summit\ bg.png);
+   
+   height: 864px;
+   width: ;
+   background-size: cover;
+   
+}
+.esummit-img{
+    position: relative;
+    width: 377px;
+    height: 197px;
+    top: -380px;
+    margin-top: 60px;
+    margin-left: 880px;
+    
+}
+
+.sec-1{
+    background-image: url(../Images-summit/Events\ E\ summit\ bg.png);
+   
+    
+   
+    
+    
+    
+    background-repeat: no-repeat;
+
+
+ 
+}
+.heading{
+    
+    color: #0F0E0E;
+    font-weight: 200;
+}
+.big-text{
+    
+    /* width: 726px; */
+    height: 53.43px;
+    padding-left: 115px;
+    padding-top: 265px;
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 53.0215px;
+    line-height: 62px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    
+    color: #D99343;
+    
+}
+.about-text{
+    /* position: absolute; */
+    width: 844px;
+    padding-top: 105px;
+    padding-left: 115px;
+
+font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 18.18px;
+line-height: 25px;
+letter-spacing: 0.18em;
+text-align: left;
+
+color: #FFFFFF;
+}
+
+.intro{
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider{
+    background: #131417;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    transform: translateY(100%);
+}
+.intro-text{
+    color:#DCD7C9;
+    font-family: "Montserrat",sans-serif;
+    font-size: 3rem;
+}
+@media (min-width:1110px) and (max-width:1285px) {
+    .big-text{
+        
+        padding-left: 20px;
+        
+    }
+    .about-text{
+       padding-left: 20px;
+       width: 780px;
+       padding-top: 135px;
+    }
+    .esummit-img{
+        width: 300px;
+    height: 150px;
+    top: -270px;
+    
+    margin-left: 780px;
+    }
+}
+@media (min-width:800px) and (max-width:1110px) {
+    .big-text{
+        
+        padding-left: 20px;
+        
+    }
+    .about-text{
+       padding-left: 20px;
+       width: 780px;
+    }
+    .esummit-img{
+        width: 300px;
+        height: 150px;
+        top: -650px;
+        
+    
+    margin-left: 0px;
+    }
+}
+@media(min-width:992.1px){
+    /* .about-text{
+        margin-top: 65.57px;
+        margin-left: 115px;
+        margin-right: 692px;
+        font-size: 18.18px;
+        
+    } */
+    /* .big-text{
+      
+        margin-left:100px;
+    } */
+    .landing{
+       
+        padding: 0rem 0rem;
+    }
+}
+@media (min-width:450px) and (max-width:800px) {
+    .esummit-img{
+        width: 300px;
+        height: 150px;
+        top: -750px;
+        
+    
+    margin-left: 0px;
+    }
+    .big-text{
+        
+        padding-left: 20px;
+        width: 500px;
+        padding-top: 165px;
+    }
+    .about-text{
+        padding-left: 20px;
+        width: 600px;
+        padding-top: 135px;
+     }
+}
+@media (max-width:449.9px) {
+    .big-text{
+       top: 80px;
+       margin-left: 10px;
+        font-size: 2rem;
+    }
+    .hide{
+        font-size: 3rem;
+    }
+    .about-text{
+        margin-top: 160px;
+        margin-left: 10px;
+        margin-right: 5px;
+        font-size:0.8rem;
+        
+    }
+    .landing{
+       
+        padding: 0rem 0rem;
+    }
+}
+
+
+.hide{
+    background:black;
+    overflow: hidden;
+}
+.hide span{
+    transform: translatey(100%);
+    display: inline-block;
+}
+
