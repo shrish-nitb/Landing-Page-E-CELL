@@ -3,40 +3,35 @@
   padding: 0;
   box-sizing: border-box;
 } */
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Raleway:wght@400;600;700;800&display=swap');
-
-
-li a{
-  transition:0.4s;
+li a {
+  transition: 0.4s;
   text-decoration: none;
-  color:White;
+  color: White;
 }
 
-nav{
-  transition:0.4s;
+nav {
+  transition: 0.4s;
 }
 
-#hrSlide{
+#hrSlide {
   content: "";
   height: 3px;
   background-color: rgba(217, 147, 67, 1);
   position: relative;
   top: 5px;
   opacity: 0;
-  transition:0.4s;
+  transition: 0.4s;
 }
 
-
-#logo{
-  transition:0.4s;
+#logo {
+  transition: 0.4s;
 }
 
-.nav-items{
-  transition:0.4s;
+.nav-items {
+  transition: 0.4s;
 }
 
-nav{
+nav {
   position: fixed;
   z-index: 1000;
   top: 0;
@@ -46,16 +41,18 @@ nav{
   align-items: right;
   height: 132px;
   font-family: 'Raleway', sans-serif;
-  background-color:black;
+  background-color: black;
   width: 100vw;
 }
-#logo{
+
+#logo {
   height: 94px;
   width: 94px;
   margin: 19px 0px 19px 50px;
-transition:0.4s;
+  transition: 0.4s;
 }
-.nav-items{
+
+.nav-items {
   display: flex;
   width: 100%;
   justify-content: flex-end;
@@ -63,51 +60,60 @@ transition:0.4s;
   font-size: 19px;
   padding-right: 54px;
   margin-top: 45px;
-
 }
-.nav-link{
-  text-decoration: none;
 
+.nav-link {
+  text-decoration: none;
   color: rgb(226, 226, 226);
-  
   list-style: none;
   /* margin-left: 10px; */
   padding-left: 10px;
   padding-right: 20px;
   padding-top: 10px;
   font-weight: 500;
-font-size: 16px;
+  font-size: 16px;
 }
-.nav-link:hover{
+
+.nav-link:hover {
   color: white;
 }
-.burger{
+
+.burger {
   display: none;
-  cursor:pointer;
+  cursor: pointer;
 }
-.burger div{
+
+.burger div {
   width: 25px;
   height: 3px;
-  background-color: rgb(226,226,226);
+  background-color: rgba(217, 147, 67, 1);
   margin: 5px;
 }
-@media screen and (max-width:1300px){
-  
-  .nav-items{
+
+@media screen and (max-width:1300px) {
+  .nav-items {
     width: 100%;
   }
 }
 
-@media screen and (max-width:1110px){
-  nav{
+@media screen and (max-width:1110px) {
+  nav {
     overflow-x: hidden;
     backdrop-filter: unset !important;
-    background-color: transparent;
+    background-color: #000000;
+    height: 72px;
   }
-  #logo{
-    opacity: 0;
+
+  #logo {
+    opacity: 1;
+    height: 41px;
+    width: 41px;
+    margin-left: 0;
+    position: fixed;
+    left: 23px;
   }
-  .nav-items{
+
+  .nav-items {
     position: fixed;
     z-index: 1000;
     right: 0px;
@@ -124,42 +130,47 @@ font-size: 16px;
     padding-right: 23px !important;
     padding-top: 0;
     margin-top: 0;
-    
   }
-  .nav-link{
+
+  .nav-link {
     opacity: 0;
     margin-left: 54px;
   }
-  .burger{
+
+  .burger {
     display: block;
     position: fixed;
     right: 0px;
-    top: 10px;
-    margin-right: 10px;
+    top: 25px;
+    margin-right: 23px;
     z-index: 1001;
   }
 }
-.nav-active{
+
+.nav-active {
   transform: translateX(0%);
 }
+
 @keyframes navLinkFade {
-  from{
-   opacity: 0;
-   transform: translateX(50px);
+  from {
+    opacity: 0;
+    transform: translateX(50px);
   }
-  to{
-  opacity: 1;
-  transform: translateX(0px);
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
   }
 }
 
-.toggle .line1{
- transform: rotate(-45deg) translate(-5px,6px);
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
 }
-.toggle .line2{
-opacity: 0;
-}
-.toggle .line3{
 
-  transform: rotate(45deg) translate(-5px,-6px);
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
