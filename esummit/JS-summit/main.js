@@ -137,18 +137,18 @@ cardSixth.addEventListener("mouseleave", function(){
 });
 
 card7.addEventListener("mouseenter", function(){
-    eventTitle1.classList.add('sml-title');
-    eventText7.classList.add('add-text-2');
+    eventTitle1.classList.add('sml-img');
+    eventText7.classList.add('add-text');
     card7.classList.add('event-card-add');
-    eventTitle1.style.animation = 'addtitle1 1s ease forwards';
-    eventText7.style.animation = 'addtext3 1s ease forwards 0.3s ';
+    eventTitle1.style.animation = 'mymove 1s ease forwards';
+    eventText7.style.animation = 'addtext 1s ease forwards 0.3s ';
 });
 card7.addEventListener("mouseleave", function(){
-    eventTitle1.classList.remove('sml-title');
-    eventText7.classList.remove('add-text-2');
+    eventTitle1.classList.remove('sml-img');
+    eventText7.classList.remove('add-text');
     card7.classList.remove('event-card-add');
-    eventTitle1.style.animation = 'addtitle2 1s ease ';
-    eventText7.style.animation = 'addtext4 1s ease ';
+    eventTitle1.style.animation = 'mymove2 1s ease ';
+    eventText7.style.animation = 'addtext2 1s ease ';
 });
 
 card8.addEventListener("mouseenter", function(){
