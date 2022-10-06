@@ -760,7 +760,7 @@
     parallax2.style.backgroundPositionY = -(offset * 0.03) + "px";
     // EXCLUDE - not part of nav shrink script
 
-
+    if(window.innerWidth>1110){
     let nav = document.getElementsByTagName("nav")[0].style;
     let logo = document.getElementById("logo").style;
     let navItem = document.getElementsByClassName("nav-items")[0].style;
@@ -780,6 +780,9 @@
       navItem.transform = "scale(1)";
       hrSlide.opacity = 0;
     }
+  }
+
+
     if (document.documentElement.scrollTop < 220) {
       let progress = Math.trunc(document.documentElement.scrollTop) / 220;
 
